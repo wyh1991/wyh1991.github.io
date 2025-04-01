@@ -250,6 +250,14 @@ body {
             <a href="/gpt-brand.html" style="color:#fff; text-decoration:underline"> To Center</a>
         </p>
     </footer>
+    <script>
+        const product = document.getElementsByClassName("product-grid")[0]
+        product.addEventListener("click",(e) => {
+            const item = e.target.closest(".product-card")
+            console.log(item,"item")
+            window.location.href = "/xyz-100.html"
+        })
+    </script>
 </body>
 
 </html>
